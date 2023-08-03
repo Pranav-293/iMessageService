@@ -40,11 +40,10 @@
         }
       )
       .then((response) => {
-        console.log(response);
+        console.log(response.body);
       })
       .catch((err) => {
         console.log(err.message);
-         console.log(err.response);
       });
     }
 }
