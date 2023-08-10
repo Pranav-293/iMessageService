@@ -24,7 +24,7 @@ app.post("/", (req, res) => {
       const message = `Received you message - ${req.body.text}`;
        Imessage.postMessage(sender_name, recipient, message);
        console.log(req.body);
-      console.log(json.stringify(req.header));
+      console.log(JSON.stringify(req.header));
        res.send();
     }
     else{
